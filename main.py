@@ -13,12 +13,13 @@ print("Welcome to the tip calculator!")
 
 bill = float(input("What was the total bill? $"))
 
-tip = int(input("how much tip would you like to give? 10, 12, or 15? "))
+#can use any percentage of tip now instead of the limited options
+tip = int(input("how much tip would you like to give? "))
 
 total_bill = (tip/100 * bill) + bill
 
 people = int(input("How many people to split the bill? "))
 
-#used the .2f formal to get the bill in 2 decimal values always
+#used the .2f format to get the bill in 2 decimal values always
 bill_per_person = "{:.2f}".format(total_bill/people)
 print(f"Each person should pay: ${bill_per_person}")
