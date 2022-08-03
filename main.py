@@ -19,5 +19,6 @@ total_bill = (tip/100 * bill) + bill
 
 people = int(input("How many people to split the bill? "))
 
+#used the .2f formal to get the bill in 2 decimal values always
 bill_per_person = "{:.2f}".format(total_bill/people)
 print(f"Each person should pay: ${bill_per_person}")
